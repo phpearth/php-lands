@@ -1,0 +1,117 @@
+{"data": [
+{
+"title": "Symfony",
+"desc": "Symfony is a set of reusable PHP components and a PHP framework for web projects.",
+"link": "https://symfony.com",
+"x": "2550",
+"y": "1700"
+},{
+"title": "Laravel",
+"desc": "The PHP Framework For Web Artisans",
+"link": "https://laravel.com",
+"x": "1415",
+"y": "920"
+},{
+"title": "CakePHP",
+"desc": "CakePHP is a full stack web development framework.",
+"link": "https://cakephp.org",
+"x": "1910",
+"y": "1515"
+},{
+"title": "Yii",
+"desc": "Yii is a fast, secure, and efficient PHP framework.",
+"link": "https://www.yiiframework.com",
+"x": "1700",
+"y": "720"
+},{
+"title": "CodeIgniter",
+"desc": "CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications.",
+"link": "https://codeigniter.com",
+"x": "1070",
+"y": "930"
+},{
+"title": "Zend",
+"desc": "Professional PHP packages. Focused on simplicity, reusability, and performance.",
+"link": "https://www.zend.com",
+"x": "3300",
+"y": "1447"
+},{
+"title": "PHP.net",
+"desc": "The main PHP website with PHP downloads and PHP manual.",
+"link": "https://php.net",
+"x": "3960",
+"y": "1330"
+},{
+"title": "Magento",
+"desc": "Magento empowers retailers and brands with the eCommerce platform and cloud solutions.",
+"link": "https://magento.com",
+"x": "3710",
+"y": "1840"
+},{
+"title": "Nomad PHP",
+"desc": "A group of PHP developers that value continuous learning.",
+"link": "https://nomadphp.com",
+"x": "5045",
+"y": "1085"
+},{
+"title": "PHP Weekly",
+"desc": "PHP Weekly is a free mailer sent out each week with PHP News, events, articles, links and more.",
+"link": "http://www.phpweekly.com",
+"x": "2000",
+"y": "3100"
+},{
+"title": "PHP-FIG",
+"desc": "The PHP Framework Interoperability Group.",
+"link": "https://www.php-fig.org",
+"x": "1120",
+"y": "1845"
+},{
+"title": "PHP Delusions",
+"desc": "The PHP Delusions site is dedicated to PHP programming language and its proper use, with the focus on disproving various delusions and superstitions.",
+"link": "https://phpdelusions.net",
+"x": "895",
+"y": "1215"
+},{
+"title": "Swift Mailer",
+"desc": "Powerful component based mailing library for PHP.",
+"link": "https://swiftmailer.symfony.com",
+"x": "2610",
+"y": "1480"
+},{
+"title": "PHPMailer",
+"desc": "The classic email sending library for PHP.",
+"link": "https://github.com/PHPMailer/PHPMailer",
+"x": "2195",
+"y": "735"
+},{
+"title": "PECL",
+"desc": "Repository for PHP extensions.",
+"link": "https://pecl.php.net",
+"x": "4240",
+"y": "1605"
+},{
+"title": "Packagist.org",
+"desc": "The PHP package repository containing Composer packages, components, frameworks...",
+"link": "https://packagist.org",
+"x": "3320",
+"y": "940"
+},{
+"title": "Adminer",
+"desc": "Database management in a single PHP file.",
+"link": "https://www.adminer.org",
+"x": "4545",
+"y": "1000"
+},{
+"title": "PhpMyAdmin",
+"desc": "Tool for managing MySQL/MariaDB databases.",
+"link": "https://www.phpmyadmin.net",
+"x": "4710",
+"y": "910"
+},{
+"title": "Joomla",
+"desc": "Content management system.",
+"link": "https://www.joomla.org",
+"x": "5430",
+"y": "985"
+}
+]}

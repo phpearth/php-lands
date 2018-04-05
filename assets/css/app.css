@@ -1,0 +1,176 @@
+body {
+    background: #000000;
+    color: #fefefe;
+}
+
+h1 {
+    font: 2.90em 'Cinzel', serif;
+    font-weight: 400;
+    letter-spacing: 0.30em;
+    text-transform: uppercase;
+    visibility: hidden;
+    word-wrap: break-word;
+}
+
+.pe-container {
+    width: 100%;
+    padding-bottom: 53%;
+}
+
+#phplandsmap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pe-grab {
+    cursor: move;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.pe-grabbing {
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+div#tooltip.openseadragon-overlay {
+    background-color: #24292a;
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px;
+    max-width: 200px;
+    border-radius: 8px;
+    line-height: 20px;
+    visibility: hidden;
+    font-size: 13px;
+}
+
+div#tooltip.openseadragon-overlay div.header {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+video.fullscreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+[class^="letter"] {
+    -webkit-transition: opacity 3s ease;
+    -moz-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+}
+
+.letter-0 {
+    font-size: 1.4em;
+    transition-delay: 0.1s;
+}
+
+.letter-1 {
+    transition-delay: 0.3s;
+}
+
+.letter-2 {
+    transition-delay: 0.4s;
+}
+
+.letter-3 {
+    transition-delay: 0.5s;
+}
+
+.letter-4 {
+    transition-delay: 0.6s;
+}
+
+.letter-5 {
+    transition-delay: 0.7s;
+}
+
+.letter-6 {
+    transition-delay: 0.8s;
+}
+
+.letter-7 {
+    transition-delay: 0.9s;
+}
+
+.letter-8 {
+    transition-delay: 1.0s;
+}
+
+.letter-9 {
+    transition-delay: 1.1s;
+}
+
+.letter-10 {
+    transition-delay: 1.2s;
+}
+
+.letter-11 {
+    transition-delay: 1.3s;
+}
+
+.letter-12 {
+    transition-delay: 1.4s;
+}
+
+.letter-13 {
+    transition-delay: 1.5s;
+}
+
+.letter-14 {
+    transition-delay: 1.6s;
+}
+
+.letter-15 {
+    transition-delay: 1.7s;
+}
+
+.letter-16 {
+    transition-delay: 1.8s;
+}
+
+h1.transition-in {
+    visibility: visible;
+}
+
+h1 [class^="letter"] {
+    opacity: 0;
+}
+
+h1.transition-in [class^="letter"] {
+    opacity: 1;
+}
+
+.pe-sidebar-buttons {
+    margin: 20px 0 30px 0;
+}
+
+.ui.message .header {
+    margin-bottom: 10px;
+}
+
+.ui.inverted.segment.pe-content-segment {
+    background-color: rgba(27, 28, 29, 0.7);
+}
+
+.pe-center {
+    text-align: center;
+}
+
+.ui.segment.pe-map-segment {
+    background-color: #000000;
+}
