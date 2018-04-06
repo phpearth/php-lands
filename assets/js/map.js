@@ -89,7 +89,7 @@ function App (locations) {
         this.viewer.buttons.buttons.push(toggleCoordinatesButton);
         this.viewer.buttons.element.appendChild(toggleCoordinatesButton.element);
 
-        toggleCoordinatesButton.addHandler("click", function (data) {
+        toggleCoordinatesButton.addHandler("click", function (event) {
             self.toggleCoordinates();
         });
 
@@ -98,8 +98,8 @@ function App (locations) {
             moveHandler: function(event) {
                 var viewportPoint = self.viewer.viewport.pointFromPixel(event.position);
                 var imagePoint = self.viewer.viewport.viewportToImageCoordinates(viewportPoint);
-                document.getElementById('coordinates').innerHTML = '('+Math.round(imagePoint.x)+' , '+Math.round(imagePoint.y)+')';
-                self.viewer.updateOverlay('coordinates', new OpenSeadragon.Point(Number(viewportPoint.x)+0.005, Number(viewportPoint.y)+0.005));
+                document.getElementById('coordinates').innerHTML = '<br>('+Math.round(imagePoint.x)+' , '+Math.round(imagePoint.y)+')';
+                self.viewer.updateOverlay('coordinates', new OpenSeadragon.Point(Number(viewportPoint.x), Number(viewportPoint.y)));
             }
          });
     };

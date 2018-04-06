@@ -1,8 +1,6 @@
 <h1 id="h1">{{ site.title }}</h1>
 
-<p class="pe-center">{{ site.description }}</p>
-
-<div class="ui brown huge right ribbon label"><i class="tag icon"></i>{% if site.github.latest_release %}{{ site.github.latest_release }}{% else %}Pre-release{% endif %}</div>
+<p class="pe-center">{{ site.description }} <a class="ui tag red label" href="https://github.com/php-earth/php-lands">{% if site.github.latest_release %}{{ site.github.latest_release }}{% else %}Pre-release{% endif %}</a></p>
 
 <div class="ui inverted segment pe-map-segment">
   <div id="pe-dimmer" class="ui enabled inverted dimmer">
