@@ -2,13 +2,15 @@
 
 <p class="pe-center">{{ site.description }}</p>
 
+<div class="ui brown huge right ribbon label"><i class="tag icon"></i>{% if site.github.latest_release %}{{ site.github.latest_release }}{% else %}Pre-release{% endif %}</div>
+
 <div class="ui inverted segment pe-map-segment">
   <div id="pe-dimmer" class="ui enabled inverted dimmer">
     <div id="pe-loader" class="ui text loader">Loading</div>
   </div>
 
   <div class="pe-container">
-    <div id="phplandsmap" data-map-src="{% if jekyll.environment != 'development' %}{{ site.app.map_url }}{% endif %}"><div id="tooltip"></div></div>
+    <div id="phplandsmap" data-map-src="{% if jekyll.environment != 'development' %}{{ site.app.map_url }}{% endif %}"><div id="tooltip"></div><div id="coordinates"></div></div>
   </div>
 </div>
 
@@ -57,13 +59,7 @@ make it more accurate.</p>
     <i class="tag icon"></i>
     <div class="content">
       <div class="header">Map edition</div>
-      <div class="description">
-        {% if site.github.latest_release %}
-          {{ site.github.latest_release }}
-        {% else %}
-          2018 v0.6
-        {% endif %}
-      </div>
+      <div class="description">{% if site.github.latest_release %}{{ site.github.latest_release }}{% else %}Pre-release{% endif %}</div>
     </div>
   </div>
   <div class="item">

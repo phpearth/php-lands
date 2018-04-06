@@ -174,3 +174,9 @@ h1.transition-in [class^="letter"] {
 .ui.segment.pe-map-segment {
     background-color: #000000;
 }
+
+div#coordinates.openseadragon-overlay {
+    display: inline-block;
+    visibility: hidden;
+    font-weight: bold;
+}

@@ -26,6 +26,11 @@ function App (locations) {
                 x: 0,
                 y: 0,
                 checkResize: false
+            },{
+                id: 'coordinates',
+                x: 0,
+                y: 0,
+                checkResize: false
             }]
         });
 
@@ -56,7 +61,7 @@ function App (locations) {
             }
         });
 
-        // Toggle button
+        // Toggle locations button
         let toggleOverlayButton = new OpenSeadragon.Button({
             tooltip: 'Toggle locations',
             srcRest: '/assets/img/togglePinButtonRest.png',
@@ -71,6 +76,32 @@ function App (locations) {
         toggleOverlayButton.addHandler("click", function (data) {
             self.togglePins();
         });
+
+        // Toggle coordinates button
+        let toggleCoordinatesButton = new OpenSeadragon.Button({
+            tooltip: 'Toggle coordinates',
+            srcRest: '/assets/img/toggleCoordinatesButtonRest.png',
+            srcGroup: '/assets/img/toggleCoordinatesButtonGroupHover.png',
+            srcHover: '/assets/img/toggleCoordinatesButtonHover.png',
+            srcDown: '/assets/img/toggleCoordinatesButtonPressed.png',
+        });
+
+        this.viewer.buttons.buttons.push(toggleCoordinatesButton);
+        this.viewer.buttons.element.appendChild(toggleCoordinatesButton.element);
+
+        toggleCoordinatesButton.addHandler("click", function (data) {
+            self.toggleCoordinates();
+        });
+
+        var moveTracker = new OpenSeadragon.MouseTracker({
+            element: this.viewer.container,
+            moveHandler: function(event) {
+                var viewportPoint = self.viewer.viewport.pointFromPixel(event.position);
+                var imagePoint = self.viewer.viewport.viewportToImageCoordinates(viewportPoint);
+                document.getElementById('coordinates').innerHTML = '('+Math.round(imagePoint.x)+' , '+Math.round(imagePoint.y)+')';
+                self.viewer.updateOverlay('coordinates', new OpenSeadragon.Point(Number(viewportPoint.x)+0.005, Number(viewportPoint.y)+0.005));
+            }
+         });
     };
 
     this.initPins = function() {
@@ -79,10 +110,10 @@ function App (locations) {
         var pinHeight = 0.0229;
 
         for (var i=0; i < this.locations.length; i++) {
-            var x = (Number(this.locations[i].x)/13120)-pinWidth+0.0004;
-            var y = (Number(this.locations[i].y)/13120)-pinHeight+0.0009;
+            var x = (Number(this.locations[i].x)/13120)-2*pinWidth/3;
+            var y = (Number(this.locations[i].y)/13120)-4*pinHeight/5;
 
-            var link = (this.locations[i].link) ? '<div><a href="'+this.locations[i].link+'" target="_blank" title="Find out more..." id="tooltiplink"><i class="icon link"></i></a></div>' : '';
+            var link = (this.locations[i].link) ? '<div><a href="'+this.locations[i].link+'" target="_blank" title="Find out more..." id="tooltiplink"><i class="icon linkify"></i></a></div>' : '';
             var content = '<div class="header"><i class="map marker alternate icon"></i> ' + this.locations[i].title + '</div><div class="content">' + this.locations[i].desc + link + '</div>';
 
             this.pins[i] = d3.select(this.svgOverlay.node()).append("svg:image")
@@ -114,7 +145,7 @@ function App (locations) {
                         $('#tooltip').stop().fadeIn(0);
                     }
                     elt.onmouseleave = function(){
-                        $('#tooltip').fadeOut(1500);
+                        $('#tooltip').fadeOut(1200);
                     }
 
                     var tooltip_x = this.getAttribute('x');
@@ -144,7 +175,7 @@ function App (locations) {
                         .attr("y", this.getAttribute('y'))
                         .attr("xlink:href","/assets/img/pin.png");
 
-                    $('#tooltip').fadeOut(1500);
+                    $('#tooltip').fadeOut(1200);
                 });
         }
 
@@ -155,6 +186,11 @@ function App (locations) {
 
     this.togglePins = function() {
         this.svgOverlay.node().style.display === 'none' ? this.svgOverlay.node().style.display = 'block' : this.svgOverlay.node().style.display = 'none';
+    }
+
+    this.toggleCoordinates = function() {
+        var el = document.getElementById('coordinates');
+        el.style.visibility != 'visible' ? el.style.visibility = 'visible' : el.style.visibility = 'hidden';
     }
 }
 
