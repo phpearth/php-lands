@@ -11,7 +11,7 @@ function App (locations) {
 
         this.viewer = OpenSeadragon({
             id: "phplandsmap",
-            prefixUrl: "/assets/img/openseadragon/",
+            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.3.1/images/",
             tileSources: document.getElementById('phplandsmap').getAttribute('data-map-src')+'/map.dzi',
             visibilityRatio: 1,
             constrainDuringPan: true,
