@@ -1,7 +1,7 @@
 # The PHP Lands Map
 
 [![Map Edition](https://img.shields.io/github/release/php-earth/php-lands/all.svg?style=plastic)](https://github.com/php-earth/php-lands/releases/latest)
-![Cartographers](https://img.shields.io/badge/cartographers-PHP.earth-green.svg)
+![Cartographers](https://img.shields.io/badge/cartographers-PHP.earth-green.svg?style=plastic)
 
 Explore the PHP language and ecosystem in a fun and interactive way using a
 pirate map.
