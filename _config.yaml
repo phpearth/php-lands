@@ -12,5 +12,5 @@ exclude:
 app:
   facebook_app_id: 1312611332154433
   facebook_api_version: v2.12
-  map_url: https://raw.githubusercontent.com/php-earth/assets/master/php-lands/v0.7
+  map_url: https://raw.githubusercontent.com/php-earth/assets/master/php-lands/v0.8
   asset_version: v4
