@@ -91,12 +91,12 @@ make it more accurate.</p>
     Star
   </a>
 
-  <a class="ui compact mini basic inverted button" target="_blank" href="https://lands.php.earth/" id="fbShareBtn" data-tooltip="Share the map on Facebook" data-inverted="">
+  <a class="ui compact mini basic inverted button" href="https://lands.php.earth/" id="fbShareBtn" data-tooltip="Share the map on Facebook" data-inverted="">
     <i class="facebook large icon"></i>
     Share
   </a>
 
-  <a class="ui compact mini basic inverted button" target="_blank" href="https://twitter.com/intent/tweet?text=The+PHP+Lands+Map&url=https%3A%2F%2Flands.php.earth&hashtags=PHP" data-tooltip="Tweet the map" data-inverted="">
+  <a class="ui compact mini basic inverted button" href="https://twitter.com/intent/tweet?text=The+PHP+Lands+Map&url=https%3A%2F%2Flands.php.earth&hashtags=PHP&via=phpearth" data-tooltip="Tweet the map" data-inverted="">
     <i class="twitter large icon"></i>
     Tweet
   </a>
