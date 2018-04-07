@@ -91,7 +91,7 @@ make it more accurate.</p>
     Star
   </a>
 
-  <a class="ui compact mini basic inverted button" href="https://lands.php.earth/" id="fbShareBtn" data-tooltip="Share the map on Facebook" data-inverted="">
+  <a class="ui compact mini basic inverted button" id="fbShareBtn" data-tooltip="Share the map on Facebook" data-inverted="">
     <i class="facebook large icon"></i>
     Share
   </a>
