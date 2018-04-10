@@ -11,3 +11,7 @@ up: ## Get up and running with Jekyll and Docker on localhost
 
 slice: ## Slice given image to DZI format
   bin/magic-slicer.sh map.jpg
+
+yarn: ## Run Yarn command in a Node.js Docker container
+  @test "$(a)"
+  docker run -it --rm -v `pwd`:/home/node/app -w /home/node/app node:alpine yarn $(a)

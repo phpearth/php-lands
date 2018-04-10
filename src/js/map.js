@@ -179,7 +179,7 @@ function App (locations) {
                 });
         }
 
-        $(window).resize(function() {
+        window.addEventListener('resize', function(event) {
             self.svgOverlay.resize();
         });
     };
@@ -194,9 +194,15 @@ function App (locations) {
     }
 }
 
-$(document).ready(function () {
-    $.getJSON("/locations.json", function(data) {
+var httpRequest = new XMLHttpRequest();
+httpRequest.open('GET', '/locations.json', true);
+
+httpRequest.onload = function() {
+    if (httpRequest.status >= 200 && httpRequest.status < 400) {
+        var data = JSON.parse(httpRequest.responseText);
         var app = new App(data.data);
         app.init();
-    });
-});
+    }
+};
+
+httpRequest.send();
