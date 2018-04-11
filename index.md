@@ -105,6 +105,12 @@ make it more accurate.</p>
     <i class="anchor large icon"></i>
     New location
   </a>
+
+  <a class="ui compact mini basic inverted button" href="https://plus.google.com/share?url=https://lands.php.earth" onclick="javascript:window.open(this.href,
+    '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" data-tooltip="Share on Google+" data-inverted="">
+    <i class="google plus g large icon"></i>
+    Google+
+  </a>
 </div>
 
 <p>No developers were harmed during the making of this map.</p>
