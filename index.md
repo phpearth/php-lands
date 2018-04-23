@@ -96,7 +96,7 @@ make it more accurate.</p>
     Share
   </a>
 
-  <a class="ui compact mini basic inverted button" href="https://twitter.com/intent/tweet?text=The+PHP+Lands+Map&url=https%3A%2F%2Flands.php.earth&hashtags=PHP&via=phpearth" data-tooltip="Tweet the map" data-inverted="">
+  <a class="ui compact mini basic inverted button" href="https://twitter.com/intent/tweet?text=The+PHP+Lands+Map&url=https%3A%2F%2Flands.php.earth&hashtags=PHP" data-tooltip="Tweet the map" data-inverted="">
     <i class="twitter large icon"></i>
     Tweet
   </a>
