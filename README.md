@@ -1,12 +1,12 @@
 # The PHP Lands Map
 
-[![Map Edition](https://img.shields.io/github/release/php-earth/php-lands/all.svg?style=plastic)](https://github.com/php-earth/php-lands/releases/latest)
+[![Map Edition](https://img.shields.io/github/release/phpearth/php-lands/all.svg?style=plastic)](https://github.com/phpearth/php-lands/releases/latest)
 ![Cartographers](https://img.shields.io/badge/cartographers-PHP.earth-green.svg?style=plastic)
 
 Explore the PHP language and ecosystem in a fun and interactive way using a
 pirate map.
 
-[![PHP Lands](https://raw.githubusercontent.com/php-earth/assets/master/php-lands/intro.jpg)](https://lands.php.earth)
+[![PHP Lands](https://raw.githubusercontent.com/phpearth/assets/master/php-lands/intro.jpg)](https://lands.php.earth)
 
 ## GitHub pages
 

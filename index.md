@@ -1,6 +1,6 @@
 <h1 id="h1">{{ site.title }}</h1>
 
-<p class="pe-center">{{ site.description }} <a class="ui tag red label" href="https://github.com/php-earth/php-lands">{% if site.github.latest_release %}{{ site.github.latest_release }}{% else %}Pre-release{% endif %}</a></p>
+<p class="pe-center">{{ site.description }} <a class="ui tag red label" href="https://github.com/phpearth/php-lands">{% if site.github.latest_release %}{{ site.github.latest_release }}{% else %}Pre-release{% endif %}</a></p>
 
 <div class="ui inverted segment pe-map-segment">
   <div id="pe-dimmer" class="ui enabled inverted dimmer">
@@ -22,7 +22,7 @@ make it more accurate.</p>
     <div class="header">Download map</div>
     <div class="content">
       Map is available for download in the following formats:<br><br>
-      <a class="ui primary compact button" href="https://github.com/php-earth/php-lands/releases"><i class="download icon"></i>PNG</a>
+      <a class="ui primary compact button" href="https://github.com/phpearth/php-lands/releases"><i class="download icon"></i>PNG</a>
     </div>
   </div>
 </div>
@@ -64,7 +64,7 @@ make it more accurate.</p>
     <i class="github icon"></i>
     <div class="content">
       <div class="header">Blueprints</div>
-      <div class="description"><a href="https://github.com/php-earth/php-lands">GitHub</a></div>
+      <div class="description"><a href="https://github.com/phpearth/php-lands">GitHub</a></div>
     </div>
   </div>
   <div class="item">
@@ -86,7 +86,7 @@ make it more accurate.</p>
 <div class="ui horizontal inverted divider header"><i class="share square outline icon"></i></div>
 
 <div class="pe-sidebar-buttons">
-  <a class="ui compact mini basic inverted button" href="https://github.com/php-earth/php-lands" target="_blank" data-tooltip="Star on GitHub" data-inverted="1">
+  <a class="ui compact mini basic inverted button" href="https://github.com/phpearth/php-lands" target="_blank" data-tooltip="Star on GitHub" data-inverted="1">
     <i class="github large icon"></i>
     Star
   </a>
@@ -101,7 +101,7 @@ make it more accurate.</p>
     Tweet
   </a>
 
-  <a class="ui compact mini basic inverted button" href="https://github.com/php-earth/php-lands/issues/new" target="_blank" data-tooltip="Discovered a new location for the map?" data-inverted="">
+  <a class="ui compact mini basic inverted button" href="https://github.com/phpearth/php-lands/issues/new" target="_blank" data-tooltip="Discovered a new location for the map?" data-inverted="">
     <i class="anchor large icon"></i>
     New location
   </a>

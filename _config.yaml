@@ -1,5 +1,5 @@
 baseurl: /
-repository: php-earth/php-lands
+repository: phpearth/php-lands
 title: The PHP Lands Map
 description: Explore the PHP language and ecosystem in a fun and interactive way using a pirate map.
 exclude:
@@ -19,5 +19,5 @@ exclude:
 app:
   facebook_app_id: 1312611332154433
   facebook_api_version: v2.12
-  map_url: https://raw.githubusercontent.com/php-earth/assets/master/php-lands/v0.8
+  map_url: https://raw.githubusercontent.com/phpearth/assets/master/php-lands/v0.8
   asset_version: v5
