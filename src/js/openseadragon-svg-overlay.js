@@ -3,7 +3,7 @@
 (function() {
 
     var $ = window.OpenSeadragon;
-    
+
     if (!$) {
         $ = require('openseadragon');
         if (!$) {
@@ -54,6 +54,10 @@
             self.resize();
         });
 
+        this._viewer.addHandler('flip', function() {
+          self.resize();
+        });
+
         this._viewer.addHandler('resize', function() {
             self.resize();
         });
@@ -83,12 +87,22 @@
             var p = this._viewer.viewport.pixelFromPoint(new $.Point(0, 0), true);
             var zoom = this._viewer.viewport.getZoom(true);
             var rotation = this._viewer.viewport.getRotation();
+            var flipped = this._viewer.viewport.getFlip();
             // TODO: Expose an accessor for _containerInnerSize in the OSD API so we don't have to use the private variable.
-            var scale = this._viewer.viewport._containerInnerSize.x * zoom;
-            this._node.setAttribute('transform',
-                'translate(' + p.x + ',' + p.y + ') scale(' + scale + ') rotate(' + rotation + ')');
-        },
+            var containerSizeX = this._viewer.viewport._containerInnerSize.x
+            var scaleX = containerSizeX * zoom;
+            var scaleY = scaleX;
 
+            if(flipped){
+                // Makes the x component of the scale negative to flip the svg
+                scaleX = -scaleX;
+                // Translates svg back into the correct coordinates when the x scale is made negative.
+                p.x = -p.x + containerSizeX;
+            }
+
+            this._node.setAttribute('transform',
+                'translate(' + p.x + ',' + p.y + ') scale(' + scaleX + ',' + scaleY + ') rotate(' + rotation + ')');
+        },
         // ----------
         onClick: function(node, handler) {
             // TODO: Fast click for mobile browsers

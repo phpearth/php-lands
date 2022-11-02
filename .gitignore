@@ -1,6 +1,8 @@
 /_site
+/Gemfile.lock
 /map.jpg
 /map.dzi
 /map_files
+/node_modules/
+/package-lock.json
 /yarn-error.log
-/node_modules

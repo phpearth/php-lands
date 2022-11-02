@@ -1,5 +1,5 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = {
     entry: './src/app.js',
@@ -11,15 +11,16 @@ const config = {
         rules: [
         {
             test: /\.scss$/,
-            use: ExtractTextPlugin.extract({
-                fallback: 'style-loader',
-                use: ['css-loader', 'sass-loader']
-            })
+            use: [
+                MiniCssExtractPlugin.loader,
+                "css-loader",
+                "sass-loader",
+            ]
         }
         ]
     },
     plugins: [
-        new ExtractTextPlugin('style.css')
+        new MiniCssExtractPlugin({filename: 'style.css'})
     ],
     externals: {
         openseadragon: 'OpenSeadragon'

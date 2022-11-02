@@ -91,25 +91,9 @@ make it more accurate.</p>
     Star
   </a>
 
-  <a class="ui compact mini basic inverted button" id="fbShareBtn" data-tooltip="Share the map on Facebook" data-inverted="">
-    <i class="facebook large icon"></i>
-    Share
-  </a>
-
-  <a class="ui compact mini basic inverted button" href="https://twitter.com/intent/tweet?text=The+PHP+Lands+Map&url=https%3A%2F%2Flands.php.earth&hashtags=PHP" data-tooltip="Tweet the map" data-inverted="">
-    <i class="twitter large icon"></i>
-    Tweet
-  </a>
-
   <a class="ui compact mini basic inverted button" href="https://github.com/phpearth/php-lands/issues/new" target="_blank" data-tooltip="Discovered a new location for the map?" data-inverted="">
     <i class="anchor large icon"></i>
     New location
-  </a>
-
-  <a class="ui compact mini basic inverted button" href="https://plus.google.com/share?url=https://lands.php.earth" onclick="javascript:window.open(this.href,
-    '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" data-tooltip="Share on Google+" data-inverted="">
-    <i class="google plus g large icon"></i>
-    Google+
   </a>
 </div>
 

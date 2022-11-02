@@ -11,7 +11,7 @@ function App (locations) {
 
         this.viewer = OpenSeadragon({
             id: "phplandsmap",
-            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.3.1/images/",
+            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.1.0/images/",
             tileSources: document.getElementById('phplandsmap').getAttribute('data-map-src')+'/map.dzi',
             visibilityRatio: 1,
             constrainDuringPan: true,
@@ -70,8 +70,8 @@ function App (locations) {
             srcDown: '/assets/img/togglePinButtonPressed.png',
         });
 
-        this.viewer.buttons.buttons.push(toggleOverlayButton);
-        this.viewer.buttons.element.appendChild(toggleOverlayButton.element);
+        this.viewer.buttonGroup.buttons.push(toggleOverlayButton);
+        this.viewer.buttonGroup.element.appendChild(toggleOverlayButton.element);
 
         toggleOverlayButton.addHandler("click", function (data) {
             self.togglePins();
@@ -86,8 +86,8 @@ function App (locations) {
             srcDown: '/assets/img/toggleCoordinatesButtonPressed.png',
         });
 
-        this.viewer.buttons.buttons.push(toggleCoordinatesButton);
-        this.viewer.buttons.element.appendChild(toggleCoordinatesButton.element);
+        this.viewer.buttonGroup.buttons.push(toggleCoordinatesButton);
+        this.viewer.buttonGroup.element.appendChild(toggleCoordinatesButton.element);
 
         toggleCoordinatesButton.addHandler("click", function (event) {
             self.toggleCoordinates();
@@ -145,7 +145,9 @@ function App (locations) {
                         $('#tooltip').stop().fadeIn(0);
                     }
                     elt.onmouseleave = function(){
-                        $('#tooltip').fadeOut(1200);
+                        $('#tooltip').fadeOut(1200, function() {
+                            this.style.visibility = 'hidden';
+                        });
                     }
 
                     var tooltip_x = this.getAttribute('x');
@@ -175,7 +177,9 @@ function App (locations) {
                         .attr("y", this.getAttribute('y'))
                         .attr("xlink:href","/assets/img/pin.png");
 
-                    $('#tooltip').fadeOut(1200);
+                    $('#tooltip').fadeOut(1200, function() {
+                        this.style.visibility = 'hidden';
+                    });
                 });
         }
 

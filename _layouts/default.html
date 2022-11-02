@@ -7,7 +7,6 @@
     <link rel="icon" type="image/x-icon" href="https://php.earth/favicon.ico">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="fb:app_id" content="{{ site.app.facebook_app_id }}">
 
     <!-- open graph -->
     <meta property="og:title" content="{{ site.title }}">
@@ -21,7 +20,7 @@
 
     <meta property="fb:pages" content="583227448539653">
 
-    <link rel="stylesheet" href="https://php.earth/assets/css/app.css">
+    <link rel="stylesheet" href="https://php.earth/assets/main.css">
     <link rel="stylesheet" href="/dist/style.css?{{ site.app.asset_version }}">
   </head>
   <body>
@@ -42,25 +41,6 @@
         <a class="item column" href="https://www.facebook.com/groups/2204685680/" target="_blank">FB Group</a>
       </div>
     </div>
-
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId            : '{{ site.app.facebook_app_id }}',
-          autoLogAppEvents : true,
-          xfbml            : true,
-          version          : '{{ site.app.facebook_api_version }}'
-        });
-      };
-
-      (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 
     <video loop muted autoplay class="fullscreen" id="video">
       <source src="https://raw.githubusercontent.com/phpearth/assets/master/php-lands/ship.mp4" type="video/mp4">
@@ -114,11 +94,10 @@
       </div>
     </div>
 
-    <script src="https://php.earth/assets/js/app.js"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.3.1/openseadragon.min.js"></script>
-    <script src="https://platform.twitter.com/widgets.js" async></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://php.earth/assets/bundle.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.1.0/openseadragon.min.js"></script>
     <script src="/dist/bundle.js?{{ site.app.asset_version }}"></script>
   </body>
 </html>
