@@ -7,19 +7,19 @@ function App (locations) {
     this.locations = locations;
 
     this.init = function() {
-        OpenSeadragon.setString("Tooltips.FullPage","Full screen");
-
         this.viewer = OpenSeadragon({
             id: "phplandsmap",
             prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.1.0/images/",
             tileSources: document.getElementById('phplandsmap').getAttribute('data-map-src')+'/map.dzi',
             visibilityRatio: 1,
             constrainDuringPan: true,
-            defaultZoomLevel: 0,
             minZoomLevel: 0,
-            maxZoomLevel: 20,
+            maxZoomLevel: 30,
             maxZoomPixelRatio: 4,
             showNavigator: true,
+            smoothTileEdgesMinZoom: 1,
+            controlsFadeDelay: 200,
+            controlsFadeLength: 500,
             navigatorPosition: "BOTTOM_LEFT",
             overlays: [{
                 id: 'tooltip',
@@ -30,21 +30,22 @@ function App (locations) {
                 id: 'coordinates',
                 x: 0,
                 y: 0,
-                checkResize: false
+                checkResize: true
             }]
         });
 
         this.svgOverlay = this.viewer.svgOverlay();
 
         this.viewer.addHandler('open', function(event) {
-            // Disable Semantic UI loader
+            // Disable Semantic UI loader.
             document.getElementById('pe-loader').classList.add('disabled');
             document.getElementById('pe-dimmer').className = "ui disabled inverted dimmer";
 
-            // Add grab cursor style
+            // Add grab cursor style.
             document.getElementById('phplandsmap').classList.add('pe-grab');
 
             self.initPins();
+            self.togglePins();
         });
 
         this.viewer.addHandler('canvas-press', function(event) {
@@ -61,7 +62,7 @@ function App (locations) {
             }
         });
 
-        // Toggle locations button
+        // Toggle locations button.
         let toggleOverlayButton = new OpenSeadragon.Button({
             tooltip: 'Toggle locations',
             srcRest: '/assets/img/togglePinButtonRest.png',
@@ -77,60 +78,36 @@ function App (locations) {
             self.togglePins();
         });
 
-        // Toggle coordinates button
-        let toggleCoordinatesButton = new OpenSeadragon.Button({
-            tooltip: 'Toggle coordinates',
-            srcRest: '/assets/img/toggleCoordinatesButtonRest.png',
-            srcGroup: '/assets/img/toggleCoordinatesButtonGroupHover.png',
-            srcHover: '/assets/img/toggleCoordinatesButtonHover.png',
-            srcDown: '/assets/img/toggleCoordinatesButtonPressed.png',
-        });
-
-        this.viewer.buttonGroup.buttons.push(toggleCoordinatesButton);
-        this.viewer.buttonGroup.element.appendChild(toggleCoordinatesButton.element);
-
-        toggleCoordinatesButton.addHandler("click", function (event) {
-            self.toggleCoordinates();
-        });
-
-        var moveTracker = new OpenSeadragon.MouseTracker({
-            element: this.viewer.container,
-            moveHandler: function(event) {
-                var viewportPoint = self.viewer.viewport.pointFromPixel(event.position);
-                var imagePoint = self.viewer.viewport.viewportToImageCoordinates(viewportPoint);
-                document.getElementById('coordinates').innerHTML = '<br>('+Math.round(imagePoint.x)+' , '+Math.round(imagePoint.y)+')';
-                self.viewer.updateOverlay('coordinates', new OpenSeadragon.Point(Number(viewportPoint.x), Number(viewportPoint.y)));
-            }
-         });
+        // Enable coordinates during development.
+        //self.enableCoordinates();
     };
 
     this.initPins = function() {
-        this.pins = [];
-        var pinWidth = 0.0229;
-        var pinHeight = 0.0229;
+        this.pins = []
+        var pinWidth = 0.0179;
+        var pinHeight = 0.021;
+        var imageWidth = 26240;
 
         for (var i=0; i < this.locations.length; i++) {
-            var x = (Number(this.locations[i].x)/13120)-2*pinWidth/3;
-            var y = (Number(this.locations[i].y)/13120)-4*pinHeight/5;
+            var x = Number((Number(this.locations[i].x))/imageWidth)-2*pinWidth/3;
+            var y = Number((Number(this.locations[i].y))/imageWidth)-4*pinHeight/5;
 
             var link = (this.locations[i].link) ? '<div><a href="'+this.locations[i].link+'" target="_blank" title="Find out more..." id="tooltiplink"><i class="icon linkify"></i></a></div>' : '';
             var content = '<div class="header"><i class="map marker alternate icon"></i> ' + this.locations[i].title + '</div><div class="content">' + this.locations[i].desc + link + '</div>';
 
             this.pins[i] = d3.select(this.svgOverlay.node()).append("svg:image")
                 .attr("xlink:href","/assets/img/pin.png")
-                .attr("width", 0.020)
-                .attr("height", 0.020)
-                .attr("x", x)
-                .attr("y", y)
+                .attr("width", 85)
+                .attr("height", 85)
                 .attr('id', 'pin_'+i)
                 .attr('data-content', content)
+                .attr('data-x', x)
+                .attr('data-y', y)
+                .attr("transform", "translate(" + x + " " + y + ") scale(0.0002)")
                 .on('mouseover', function(){
                     d3.select(this).transition()
-                        .attr("width", 0.020)
-                        .attr("height", 0.020)
                         .duration(200)
-                        .attr("x", this.getAttribute('x'))
-                        .attr("y", this.getAttribute('y'))
+                        .style("opacity", 0.5)
                         .attr("xlink:href","/assets/img/pin_2.png");
 
                     var elt = document.getElementById('tooltip');
@@ -145,20 +122,23 @@ function App (locations) {
                         $('#tooltip').stop().fadeIn(0);
                     }
                     elt.onmouseleave = function(){
-                        $('#tooltip').fadeOut(1200, function() {
+                        $('#tooltip').fadeOut(1000, function() {
                             this.style.visibility = 'hidden';
                         });
                     }
 
-                    var tooltip_x = this.getAttribute('x');
-                    var tooltip_y = this.getAttribute('y');
+                    var tooltip_x = Number(this.getAttribute('data-x'))+0.02;
+                    var tooltip_y = this.getAttribute('data-y');
                     self.viewer.updateOverlay('tooltip', new OpenSeadragon.Point(Number(tooltip_x), Number(tooltip_y)+pinHeight));
+
                     $('#tooltip').stop().fadeIn(100);
 
+                    // This enables links in the tooltip.
                     var tracker = new OpenSeadragon.MouseTracker({
-                        element: document.getElementById('tooltiplink'),
+                        element: 'tooltiplink',
                         clickHandler: function(event) {
-                            var target = event.originalEvent.target.parentNode;
+                            event.preventDefaultAction = true;
+                            var target = event.originalEvent.target;
                             if (target.matches('a')) {
                                 if (target.getAttribute('target') === '_blank') {
                                     window.open(target.getAttribute('href'));
@@ -169,18 +149,18 @@ function App (locations) {
                         }
                      });
                 })
+
                 .on('mouseout', function(){
                     d3.select(this).transition()
-                        .attr("width", 0.02)
-                        .attr("height", 0.02)
-                        .attr("x", this.getAttribute('x'))
-                        .attr("y", this.getAttribute('y'))
+                        .style("opacity", 1)
+                        .duration(100)
                         .attr("xlink:href","/assets/img/pin.png");
 
-                    $('#tooltip').fadeOut(1200, function() {
+                    $('#tooltip').fadeOut(1000, function() {
                         this.style.visibility = 'hidden';
                     });
-                });
+                })
+                ;
         }
 
         window.addEventListener('resize', function(event) {
@@ -195,6 +175,34 @@ function App (locations) {
     this.toggleCoordinates = function() {
         var el = document.getElementById('coordinates');
         el.style.visibility != 'visible' ? el.style.visibility = 'visible' : el.style.visibility = 'hidden';
+    }
+
+    this.enableCoordinates = function() {
+         // Toggle coordinates button.
+         let toggleCoordinatesButton = new OpenSeadragon.Button({
+            tooltip: 'Toggle coordinates',
+            srcRest: '/assets/img/toggleCoordinatesButtonRest.png',
+            srcGroup: '/assets/img/toggleCoordinatesButtonGroupHover.png',
+            srcHover: '/assets/img/toggleCoordinatesButtonHover.png',
+            srcDown: '/assets/img/toggleCoordinatesButtonPressed.png',
+        });
+
+        self.viewer.buttonGroup.buttons.push(toggleCoordinatesButton);
+        self.viewer.buttonGroup.element.appendChild(toggleCoordinatesButton.element);
+
+        toggleCoordinatesButton.addHandler("click", function (event) {
+            self.toggleCoordinates();
+        });
+
+        var moveTracker = new OpenSeadragon.MouseTracker({
+            element: self.viewer.container,
+            moveHandler: function(event) {
+                var viewportPoint = self.viewer.viewport.pointFromPixel(event.position);
+                var imagePoint = self.viewer.viewport.viewportToImageCoordinates(viewportPoint);
+                document.getElementById('coordinates').innerHTML = '<br>('+Math.round(imagePoint.x)+' , '+Math.round(imagePoint.y)+')';
+                self.viewer.updateOverlay('coordinates', new OpenSeadragon.Point(Number(viewportPoint.x), Number(viewportPoint.y)));
+            }
+         });
     }
 }
 

@@ -1,123 +1,856 @@
 {"data": [
 {
-"title": "Symfony",
-"desc": "Symfony is a set of reusable PHP components and a PHP framework for web projects.",
-"link": "https://symfony.com",
-"x": "5100",
-"y": "3400"
-},{
-"title": "Laravel",
-"desc": "The PHP Framework For Web Artisans",
-"link": "https://laravel.com",
-"x": "2830",
-"y": "1840"
-},{
-"title": "CakePHP",
-"desc": "CakePHP is a full stack web development framework.",
-"link": "https://cakephp.org",
-"x": "3820",
-"y": "3030"
-},{
-"title": "Yii",
-"desc": "Yii is a fast, secure, and efficient PHP framework.",
-"link": "https://www.yiiframework.com",
-"x": "3400",
-"y": "1440"
-},{
-"title": "CodeIgniter",
-"desc": "CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications.",
-"link": "https://codeigniter.com",
-"x": "2140",
-"y": "1860"
-},{
-"title": "Zend",
-"desc": "Professional PHP packages. Focused on simplicity, reusability, and performance.",
-"link": "https://www.zend.com",
-"x": "6600",
-"y": "2894"
-},{
-"title": "PHP.net",
-"desc": "The main PHP website with PHP downloads and PHP manual.",
-"link": "https://php.net",
-"x": "7920",
-"y": "2660"
-},{
-"title": "Magento",
-"desc": "Magento empowers retailers and brands with the eCommerce platform and cloud solutions.",
-"link": "https://magento.com",
-"x": "7420",
-"y": "3680"
-},{
-"title": "Nomad PHP",
-"desc": "A group of PHP developers that value continuous learning.",
-"link": "https://nomadphp.com",
-"x": "10090",
-"y": "2170"
-},{
-"title": "PHP Weekly",
-"desc": "PHP Weekly is a free mailer sent out each week with PHP News, events, articles, links and more.",
-"link": "http://www.phpweekly.com",
-"x": "4000",
-"y": "6200"
-},{
-"title": "PHP-FIG",
-"desc": "The PHP Framework Interoperability Group.",
-"link": "https://www.php-fig.org",
-"x": "2240",
-"y": "3690"
-},{
-"title": "PHP Delusions",
-"desc": "The PHP Delusions site is dedicated to PHP programming language and its proper use, with the focus on disproving various delusions and superstitions.",
-"link": "https://phpdelusions.net",
-"x": "1790",
-"y": "2430"
-},{
-"title": "Swift Mailer",
-"desc": "Powerful component based mailing library for PHP.",
-"link": "https://swiftmailer.symfony.com",
-"x": "5220",
-"y": "2960"
-},{
-"title": "PHPMailer",
-"desc": "The classic email sending library for PHP.",
-"link": "https://github.com/PHPMailer/PHPMailer",
-"x": "4390",
-"y": "1470"
-},{
-"title": "PECL",
-"desc": "Repository for PHP extensions.",
-"link": "https://pecl.php.net",
-"x": "8480",
-"y": "3210"
-},{
-"title": "Packagist.org",
-"desc": "The PHP package repository containing Composer packages, components, frameworks...",
-"link": "https://packagist.org",
-"x": "6640",
-"y": "1880"
-},{
-"title": "Adminer",
-"desc": "Database management in a single PHP file.",
-"link": "https://www.adminer.org",
-"x": "9090",
-"y": "2000"
-},{
-"title": "PhpMyAdmin",
-"desc": "Tool for managing MySQL/MariaDB databases.",
-"link": "https://www.phpmyadmin.net",
-"x": "9420",
-"y": "1820"
-},{
-"title": "Joomla",
-"desc": "Content management system.",
-"link": "https://www.joomla.org",
-"x": "10860",
-"y": "1970"
-},{
-"title": "Swoole",
-"desc": "Production-Grade Async programming Framework for PHP",
-"link": "https://www.swoole.co.uk",
-"x": "10705",
-"y": "3300"
+  "title": "Symfony",
+  "desc": "Symfony is a set of reusable PHP components and a PHP framework for web projects.",
+  "link": "https://symfony.com",
+  "x": "9965",
+  "y": "7305"
+},
+{
+  "title": "Laravel",
+  "desc": "The PHP Framework For Web Artisans",
+  "link": "https://laravel.com",
+  "x": "5682",
+  "y": "3693"
+},
+{
+  "title": "CakePHP",
+  "desc": "CakePHP is a full stack web development framework.",
+  "link": "https://cakephp.org",
+  "x": "7951",
+  "y": "5908"
+},
+{
+  "title": "Yii",
+  "desc": "Yii is a fast, secure, and efficient PHP framework.",
+  "link": "https://www.yiiframework.com",
+  "x": "4688",
+  "y": "5833"
+},
+{
+  "title": "CodeIgniter",
+  "desc": "CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications.",
+  "link": "https://codeigniter.com",
+  "x": "4470",
+  "y": "3676"
+},
+{
+  "title": "Zend",
+  "desc": "Enterprise PHP solutions.",
+  "link": "https://www.zend.com",
+  "x": "13940",
+  "y": "6151"
+},
+{
+  "title": "PHP.net",
+  "desc": "The main PHP website with PHP downloads and PHP manual.",
+  "link": "https://php.net",
+  "x": "15787",
+  "y": "5838"
+},
+{
+  "title": "Magento",
+  "desc": "Magento empowers retailers and brands with the eCommerce platform and cloud solutions.",
+  "link": "https://magento.com",
+  "x": "14794",
+  "y": "7635"
+},
+{
+  "title": "Nomad PHP",
+  "desc": "A group of PHP developers that value continuous learning.",
+  "link": "https://nomadphp.com",
+  "x": "18788",
+  "y": "6277"
+},
+{
+  "title": "PHP Weekly",
+  "desc": "PHP Weekly is a free mailer sent out each week with PHP News, events, articles, links and more.",
+  "link": "http://www.phpweekly.com",
+  "x": "21470",
+  "y": "2829"
+},
+{
+  "title": "PHP-FIG",
+  "desc": "The PHP Framework Interoperability Group.",
+  "link": "https://www.php-fig.org",
+  "x": "4588",
+  "y": "7211"
+},
+{
+  "title": "PHP Delusions",
+  "desc": "The PHP Delusions site is dedicated to PHP programming language and its proper use, with the focus on disproving various delusions and superstitions.",
+  "link": "https://phpdelusions.net",
+  "x": "3220",
+  "y": "5580"
+},
+{
+  "title": "Swift Mailer",
+  "desc": "Powerful component based mailing library for PHP.",
+  "link": "https://swiftmailer.symfony.com",
+  "x": "16046",
+  "y": "8772"
+},
+{
+  "title": "PHPMailer",
+  "desc": "The classic email sending library for PHP.",
+  "link": "https://github.com/PHPMailer/PHPMailer",
+  "x": "8675",
+  "y": "2968"
+},
+{
+  "title": "PECL",
+  "desc": "Repository for PHP extensions.",
+  "link": "https://pecl.php.net",
+  "x": "16693",
+  "y": "6165"
+},
+{
+  "title": "Packagist.org",
+  "desc": "The PHP package repository containing Composer packages, components, frameworks...",
+  "link": "https://packagist.org",
+  "x": "13102",
+  "y": "3741"
+},
+{
+  "title": "Adminer",
+  "desc": "Database management in a single PHP file.",
+  "link": "https://www.adminer.org",
+  "x": "18288",
+  "y": "3624"
+},
+{
+  "title": "PhpMyAdmin",
+  "desc": "Tool for managing MySQL/MariaDB databases.",
+  "link": "https://www.phpmyadmin.net",
+  "x": "18671",
+  "y": "3380"
+},
+{
+  "title": "Joomla",
+  "desc": "Content management system.",
+  "link": "https://www.joomla.org",
+  "x": "21450",
+  "y": "4261"
+},
+{
+  "title": "Swoole",
+  "desc": "Production-grade, high performance async programming framework for PHP with async IO and coroutines. Build high-performance, scalable, concurrent TCP, UDP, Unix Socket, HTTP, WebSocket services with PHP and easy to use coroutine, fibers API.",
+  "link": "https://www.swoole.com",
+  "x": "21755",
+  "y": "5978"
+},
+{
+  "title": "Open Swoole",
+  "desc": "English-documented fork of the Swoole project with a refreshed and alternative beginning. With PHP, you can easily create concurrent, high-performance, scalable, Unix Socket, TCP, HTTP, and WebSocket services, procedures, API fibers.",
+  "link": "https://openswoole.com/",
+  "x": "22318",
+  "y": "6490"
+},
+{
+  "title": "Pest",
+  "desc": "An elegant PHP Testing Framework - Pest is a Testing Framework with a focus on simplicity. It was carefully crafted to bring the joy of testing to PHP.",
+  "link": "https://pestphp.com/",
+  "x": "8413",
+  "y": "4538"
+},
+{
+  "title": "PHPStan",
+  "desc": "PHPStan finds bugs in your code without writing tests. It's open-source and free.",
+  "link": "https://phpstan.org/",
+  "x": "10205",
+  "y": "5429"
+},
+{
+  "title": "Rector",
+  "desc": "Rector is a CLI tool written in PHP. It can instantly upgrade old PHP code and handle automated refactorings. It's fast and precise - changes 5000 files under minute.",
+  "link": "https://getrector.org/",
+  "x": "7373",
+  "y": "11587"
+},
+{
+  "title": "Spiral Framework",
+  "desc": "High-Performance PHP/Go Framework. Born out of real-world software development projects, Spiral Framework is a modern PHP framework designed to power faster, cleaner, superior software development.",
+  "link": "https://spiral.dev/",
+  "x": "6121",
+  "y": "6303"
+},
+{
+  "title": "PHP Mussel",
+  "desc": "An ideal solution for shared hosting environments, where it's often not possible to utilise or install conventional anti-virus protection solutions, phpMussel is a PHP script designed to detect trojans, viruses, malware and other threats within files uploaded to your system wherever the script is hooked, based on the signatures of ClamAV and others.",
+  "link": "http://phpmussel.github.io/",
+  "x": "8506",
+  "y": "11483"
+},
+{
+  "title": "Exakat",
+  "desc": "Exakat is a real time customizable static analyzer engine that analyse and fix code for all PHP 5.2 to PHP 8 Applications for better Quality, Security, Performance and Documentation.",
+  "link": "https://www.exakat.io/",
+  "x": "15981",
+  "y": "6616"
+},
+{
+  "title": "PPM",
+  "desc": "PPM is a process manager, supercharger and load balancer for modern PHP applications.",
+  "link": "https://github.com/php-pm/php-pm",
+  "x": "21579",
+  "y": "7499"
+},
+{
+  "title": "Silex",
+  "desc": "The PHP micro-framework based on the Symfony Components.",
+  "link": "https://silex.symfony.com/",
+  "x": "16249",
+  "y": "8241"
+},
+{
+  "title": "API Platform",
+  "desc": "Create REST and GraphQL APIs, scaffold Jamstack webapps, stream changes in real-time.",
+  "link": "https://api-platform.com/",
+  "x": "7907",
+  "y": "10681"
+},
+{
+  "title": "Monolog",
+  "desc": "Sends your logs to files, sockets, inboxes, databases and various web services.",
+  "link": "https://seldaek.github.io/monolog/",
+  "x": "12609",
+  "y": "4577"
+},
+{
+  "title": "Twig",
+  "desc": "The flexible, fast, and secure template engine for PHP",
+  "link": "https://twig.symfony.com/",
+  "x": "8427",
+  "y": "7452"
+},
+{
+  "title": "Blade",
+  "desc": "Blade is the simple, yet powerful templating engine that is included with Laravel.",
+  "link": "https://laravel.com/docs/blade",
+  "x": "5063",
+  "y": "4287"
+},
+{
+  "title": "PHPUnit",
+  "desc": "PHPUnit is a programmer-oriented testing framework for PHP. It is an instance of the xUnit architecture for unit testing frameworks.",
+  "link": "https://phpunit.de/",
+  "x": "7402",
+  "y": "3651"
+},
+{
+  "title": "PHP Classes",
+  "desc": "PHP Class Scripts, Tutorials, Remote PHP Jobs Openings, PHP Shop, PHP Awards, Professionals, Book reviews, User groups, Forums.",
+  "link": "https://www.phpclasses.org/",
+  "x": "12475",
+  "y": "3428"
+},
+{
+  "title": "Symfony Casts",
+  "desc": "PHP and Symfony Video Tutorial Screencasts.",
+  "link": "https://symfonycasts.com/",
+  "x": "10528",
+  "y": "9133"
+},
+{
+  "title": "Laracasts",
+  "desc": "There's no shortage of content at Laracasts. Push your web development skills to the next level, through expert screencasts on Laravel, Vue, and so much.",
+  "link": "https://laracasts.com/",
+  "x": "5564",
+  "y": "4769"
+},
+{
+  "title": "Prophecy",
+  "desc": "Prophecy is a highly opinionated yet very powerful and flexible PHP object mocking framework. Though initially it was created to fulfil phpspec2 needs, it is flexible enough to be used inside any testing framework out there with minimal effort.",
+  "link": "https://github.com/phpspec/prophecy",
+  "x": "9403",
+  "y": "5674"
+},
+{
+  "title": "Drupal",
+  "desc": "Drupal is a leading open-source CMS for ambitious digital experiences that reach your audience across multiple channels. Because we all have different needs, Drupal allows you to create a unique space in a world of cookie-cutter solutions.",
+  "link": "https://www.drupal.org/",
+  "x": "21275",
+  "y": "8582"
+},
+{
+  "title": "Drush",
+  "desc": "Drush is a command line shell and Unix scripting interface for Drupal. Drush core ships with lots of useful commands and generators. Similarly, it runs update.php, executes SQL queries, runs content migrations, and misc utilities like cron or cache rebuild. Drush can be extended by 3rd party commandfiles.",
+  "link": "https://www.drush.org",
+  "x": "20809",
+  "y": "8689"
+},
+{
+  "title": "WordPress",
+  "desc": "Blog tool, publishing platform, and CMS. Open source software which you can use to easily create a beautiful website, blog, or app.",
+  "link": "https://wordpress.org/",
+  "x": "21808",
+  "y": "1655"
+},
+{
+  "title": "ReactPHP",
+  "desc": "ReactPHP is a low-level library for event-driven programming in PHP. At its core is an event loop, on top of which it provides low-level utilities, such as: Streams abstraction, async DNS resolver, network client/server, HTTP client/server and interaction with processes. Third-party libraries can use these components to create async network clients/servers and more.",
+  "link": "https://reactphp.org/",
+  "x": "22462",
+  "y": "5019"
+},
+{
+  "title": "FrankenPHP",
+  "desc": "FrankenPHP is a modern application server for PHP built on top of the Caddy web server. FrankenPHP gives superpowers to your PHP apps thanks to its stunning features: Early Hints, worker mode, real-time capabilities, automatic HTTPS, HTTP/2 and HTTP/3 support. It works with any PHP app and makes your Symfony projects faster than ever thanks to provided integration with the worker mode (Laravel Octane support coming). FrankenPHP can also be used as a standalone Go library to embed PHP in any app using net/http.",
+  "link": "https://frankenphp.dev/",
+  "x": "23586",
+  "y": "5010"
+},
+{
+  "title": "PrestaShop",
+  "desc": "PrestaShop is an Open Source e-commerce web application, committed to providing the best shopping cart experience for both merchants and customers. It is written in PHP, is highly customizable, supports all the major payment services, is translated in many languages and localized for many countries, has a fully responsive design (both front and back office), etc.",
+  "link": "https://www.prestashop.com/",
+  "x": "19998",
+  "y": "4028"
+},
+{
+  "title": "Sylius",
+  "desc": "Sylius provides modern software and development practices that encode a customer-centric approach and agility in your team's processes and technology stack. This holistic strategy unleashes your full potential and makes sure that your business adapts to the ever-changing demands of local and global commerce markets.",
+  "link": "https://sylius.com/",
+  "x": "20690",
+  "y": "3923"
+},
+{
+  "title": "phpBB",
+  "desc": "phpBB is a free flat-forum bulletin board software solution that can be used to stay in touch with a group of people or can power your entire website. With an extensive database of user-created extensions and styles database containing hundreds of style and image packages to customise your board, you can create a very unique forum in minutes.",
+  "link": "https://www.phpbb.com/",
+  "x": "22562",
+  "y": "3486"
+},
+{
+  "title": "PHP Office",
+  "desc": "A set of pure PHP libraries for reading and writing spreadsheet, word documents, presentations and similar.",
+  "link": "https://github.com/PHPOffice",
+  "x": "13295",
+  "y": "6219"
+},
+{
+  "title": "Laminas API Tools",
+  "desc": "Quickly build and deploy hight quality APIs.",
+  "link": "https://api-tools.getlaminas.org/",
+  "x": "12471",
+  "y": "5501"
+},
+{
+  "title": "Laminas Project",
+  "desc": "Enterprise-ready PHP components and MVC framework. Components for any PHP application, including dependency injection, event dispatchers, input validation and filtering, pagination and navigation, feed generation and parsing, and much, much more. A standards-based, event-driven MVC framework with a flexible workflow.",
+  "link": "https://getlaminas.org/",
+  "x": "13514",
+  "y": "5462"
+},
+{
+  "title": "Carbon",
+  "desc": "A simple PHP API extension for DateTime.",
+  "link": "https://carbon.nesbot.com/",
+  "x": "13860",
+  "y": "4841"
+},
+{
+  "title": "Infection PHP",
+  "desc": "PHP mutation testing framework based on AST (Abstract Syntax Tree) mutations. It works as a CLI tool and can be executed from your project's root.",
+  "link": "https://infection.github.io/",
+  "x": "8880",
+  "y": "3436"
+},
+{
+  "title": "Behat",
+  "desc": "Behat is an open source Behavior-Driven Development framework for PHP. It is a tool to support you in delivering software that matters through continuous communication, deliberate discovery and test-automation.",
+  "link": "https://behat.org/",
+  "x": "7944",
+  "y": "4555"
+},
+{
+  "title": "atoum",
+  "desc": "atoum is a simple, modern and intuitive unit testing framework for PHP! It is completely standalone, everything is available and works out of the box.",
+  "link": "https://atoum.org/",
+  "x": "8809",
+  "y": "5686"
+},
+{
+  "title": "The PHP League",
+  "desc": "The League of Extraordinary Packages is a group of developers who have banded together to build solid, well tested PHP packages using modern coding standards.",
+  "link": "https://thephpleague.com/",
+  "x": "8527",
+  "y": "6092"
+},
+{
+  "title": "Laravel Octane",
+  "desc": "Laravel Octane supercharges your application's performance by serving your application using high-powered application servers, including Open Swoole, Swoole, and RoadRunner. Octane boots your application once, keeps it in memory, and then feeds it requests at supersonic speeds.",
+  "link": "https://laravel.com/docs/octane",
+  "x": "6419",
+  "y": "2760"
+},
+{
+  "title": "PHPMD - PHP Mess Detector",
+  "desc": "It is a spin-off project of PHP Depend and aims to be a PHP equivalent of the well known Java tool PMD. PHPMD can be seen as an user friendly and easy to configure frontend for the raw metrics measured by PHP Depend. What PHPMD does is: It takes a given PHP source code base and look for several potential problems within that source. These problems can be things like: possible bugs, suboptimal code, overcomplicated expressions, unused parameters, methods, properties.",
+  "link": "https://phpmd.org/",
+  "x": "4701",
+  "y": "8023"
+},
+{
+  "title": "CaptainHook",
+  "desc": "Very flexible git hook manager for PHP developers.",
+  "link": "http://captainhook.info/",
+  "x": "2995",
+  "y": "4825"
+},
+{
+  "title": "Nette",
+  "desc": "Nette is a family of mature and stand-alone components for PHP 8. Ready to be smitten? Together, they create a framework that had been rated as the 3rd most popular in the world. Nette philosophy is to focus on productivity, best practices, and security.",
+  "link": "https://nette.org/",
+  "x": "3519",
+  "y": "4169"
+},
+{
+  "title": "Laravel Totem",
+  "desc": "Manage Your Laravel Schedule From A Web Dashboard.",
+  "link": "https://github.com/codestudiohq/laravel-totem",
+  "x": "4664",
+  "y": "4561"
+},
+{
+  "title": "whoops",
+  "desc": "whoops is a nice little library that helps you develop and maintain your projects better, by helping you deal with errors and exceptions in a less painful way.",
+  "link": "https://filp.github.io/whoops/",
+  "x": "3154",
+  "y": "8060"
+},
+{
+  "title": "Ratchet",
+  "desc": "WebSockets for PHP. Ratchet is a loosely coupled PHP library providing developers with tools to create real time, bi-directional applications between clients and servers over WebSockets. This is not your Grandfather's Internet.",
+  "link": "http://socketo.me/",
+  "x": "21283",
+  "y": "7791"
+},
+{
+  "title": "Amp",
+  "desc": "Amp is an event-driven concurrency framework for PHP providing primitives to manage cooperative multitasking building upon an event loop, and promises. Event driven programming requires a different mindset, so Amp provides synchronous feeling APIs to ease the transition. A wide range of packages allows creating entire applications using non-blocking I/O and taking advantage of long running processes. It's also possible to integrate Amp into existing applications for concurrent data access.",
+  "link": "https://amphp.org/",
+  "x": "21586",
+  "y": "6746"
+},
+{
+  "title": "PHP Fibers",
+  "desc": "Fibers represent full-stack, interruptible functions. Fibers may be suspended from anywhere in the call-stack, pausing execution within the fiber until the fiber is resumed at a later time. Fibers pause the entire execution stack, so the direct caller of the function does not need to change how it invokes the function.",
+  "link": "https://www.php.net/manual/en/language.fibers.php",
+  "x": "22856",
+  "y": "6881"
+},
+{
+  "title": "PHPIVE",
+  "desc": "The PHAR Installation and Verification Environment (PHIVE)",
+  "link": "https://phar.io/",
+  "x": "18304",
+  "y": "2225"
+},
+{
+  "title": "Phalcon Framework",
+  "desc": "A full-stack PHP framework delivered as a C-extension.",
+  "link": "https://phalcon.io/",
+  "x": "7296",
+  "y": "6895"
+},
+{
+  "title": "Symfony Panther",
+  "desc": "Panther is a convenient standalone library to scrape websites and to run end-to-end tests using real browsers.",
+  "link": "https://github.com/symfony/panther",
+  "x": "8156",
+  "y": "8226"
+},
+{
+  "title": "Goutte",
+  "desc": "Goutte is a screen scraping and web crawling library for PHP. Goutte provides a nice API to crawl websites and extract data from the HTML/XML responses.",
+  "link": "https://github.com/FriendsOfPHP/Goutte",
+  "x": "10837",
+  "y": "8136"
+},
+{
+  "title": "Doctrine",
+  "desc": "The Doctrine Project is the home to several PHP libraries primarily focused on database storage and object mapping. The core projects are the Object Relational Mapper (ORM) and the Database Abstraction Layer (DBAL) it is built upon.",
+  "link": "https://www.doctrine-project.org/",
+  "x": "10263",
+  "y": "7830"
+},
+{
+  "title": "Halite",
+  "desc": "Halite is a PHP library that offers a simplified interface to using the PHP extension for libsodium. Halite emphasizes simplicity without sacrificing any of the security that libsodium offers.",
+  "link": "https://paragonie.com/project/halite",
+  "x": "5137",
+  "y": "5697"
+},
+{
+  "title": "TYPO3 CMS",
+  "desc": "TYPO3 — the Professional, Flexible Content Management System. TYPO3 CMS is an Open Source Enterprise Content Management System with a large global community.",
+  "link": "https://typo3.org/",
+  "x": "5543",
+  "y": "5259"
+},
+{
+  "title": "Lumen",
+  "desc": "The Stunningly Fast PHP Micro-Framework By Laravel.",
+  "link": "https://lumen.laravel.com/",
+  "x": "7273",
+  "y": "2520"
+},
+{
+  "title": "Mockery",
+  "desc": "Mockery is a simple yet flexible PHP mock object framework for use in unit testing with PHPUnit, PHPSpec or any other testing framework. Its core goal is to offer a test double framework with a succinct API capable of clearly defining all possible object operations and interactions using a human readable Domain Specific Language (DSL). Designed as a drop in alternative to PHPUnit's phpunit-mock-objects library, Mockery is easy to integrate with PHPUnit and can operate alongside phpunit-mock-objects without the World ending.",
+  "link": "https://docs.mockery.io/",
+  "x": "7261",
+  "y": "3067"
+},
+{
+  "title": "phpspec",
+  "desc": "phpspec is a tool which can help you write clean and working PHP code using behaviour driven development or BDD. BDD is a technique derived from test-first development.",
+  "link": "https://phpspec.net",
+  "x": "7343",
+  "y": "4807"
+},
+{
+  "title": "PHP User Groups",
+  "desc": "PHP User Group (PUG) is virtual or real in-place community consisting of local people participating and organizing PHP conferences and meetings. You can find your local user group at official PHP user groups list which is based on the PHP.ug. In case there is no local PHP User Group near you, find some friends interested in PHP and start your own local user group.",
+  "link": "https://php.ug/",
+  "x": "6578",
+  "y": "5408"
+},
+{
+  "title": "Livewire",
+  "desc": "Livewire is a full-stack framework for Laravel that makes building dynamic interfaces simple, without leaving the comfort of Laravel.",
+  "link": "https://laravel-livewire.com/",
+  "x": "5938",
+  "y": "4368"
+},
+{
+  "title": "Eloquent",
+  "desc": "Laravel includes Eloquent, an object-relational mapper (ORM) that makes it enjoyable to interact with your database. When using Eloquent, each database table has a corresponding Model that is used to interact with that table. In addition to retrieving records from the database table, Eloquent models allow you to insert, update, and delete records from the table as well.",
+  "link": "https://laravel.com/docs/eloquent",
+  "x": "6300",
+  "y": "4221"
+},
+{
+  "title": "PHP: The Right Way",
+  "desc": "There's a lot of outdated information on the Web that leads new PHP users astray, propagating bad practices and insecure code. PHP: The Right Way is an easy-to-read, quick reference for PHP popular coding standards, links to authoritative tutorials around the Web and what the contributors consider to be best practices at the present time.",
+  "link": "https://phptherightway.com/",
+  "x": "11440",
+  "y": "7382"
+},
+{
+  "title": "Guzzle",
+  "desc": "Guzzle is a PHP HTTP client that makes it easy to send HTTP requests and trivial to integrate with web services.",
+  "link": "https://docs.guzzlephp.org",
+  "x": "12070",
+  "y": "7674"
+},
+{
+  "title": "PHP CS Fixer",
+  "desc": "The PHP Coding Standards Fixer (PHP CS Fixer) tool fixes your code to follow standards; whether you want to follow PHP coding standards as defined in the PSR-1, PSR-2, etc., or other community driven ones like the Symfony one. You can also define your (team's) style through configuration.",
+  "link": "https://cs.symfony.com/",
+  "x": "11937",
+  "y": "8380"
+},
+{
+  "title": "Symfony Flex",
+  "desc": "Symfony Flex helps developers create Symfony applications, from the most simple micro-style projects to the more complex ones with dozens of dependencies.",
+  "link": "https://github.com/symfony/flex",
+  "x": "11398",
+  "y": "8234"
+},
+{
+  "title": "Slim Framework",
+  "desc": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.",
+  "link": "https://www.slimframework.com/",
+  "x": "7400",
+  "y": "5408"
+},
+{
+  "title": "PHPDocumentor",
+  "desc": "phpDocumentor is the de-facto documentation application for PHP projects. Your project can benefit too from more than 20 years of experience and setting the standard for documenting PHP Applications.",
+  "link": "https://www.phpdoc.org/",
+  "x": "6968",
+  "y": "5581"
+},
+{
+  "title": "Xdebug",
+  "desc": "Xdebug is a debugging tool for PHP. It provides step-debugging and a whole range of development helpers, such as stack traces, a code profiler, features to dump the full execution of your script to a file, and more.",
+  "link": "https://xdebug.org/",
+  "x": "14943",
+  "y": "5616"
+},
+{
+  "title": "PHP_CodeSniffer",
+  "desc": "PHP_CodeSniffer is a set of two PHP scripts; the main phpcs script that tokenizes PHP, JavaScript and CSS files to detect violations of a defined coding standard, and a second phpcbf script to automatically correct coding standard violations. PHP_CodeSniffer is an essential development tool that ensures your code remains clean and consistent.",
+  "link": "https://github.com/squizlabs/PHP_CodeSniffer",
+  "x": "14408",
+  "y": "5059"
+},
+{
+  "title": "Aura PHP",
+  "desc": "The Aura project centers around a collection of high-quality, well-tested, semantically versioned, standards-compliant, independent library packages that can be used in any codebase. Each library is self-contained and has only the things it needs for its core purpose. None of the library packages depends on any other package. They are decoupled, not only from any particular framework, but also from each other. This means developers can use as much or as little of the project as necessary.",
+  "link": "https://auraphp.com/",
+  "x": "14278",
+  "y": "5768"
+},
+{
+  "title": "Sodium",
+  "desc": "Sodium is a modern, easy-to-use software library for encryption, decryption, signatures, password hashing and more. Its goal is to provide all of the core operations needed to build higher-level cryptographic tools.",
+  "link": "https://www.php.net/manual/en/intro.sodium.php",
+  "x": "15023",
+  "y": "6708"
+},
+{
+  "title": "Sculpin",
+  "desc": "Sculpin is a static site generator written in PHP. It converts Markdown files, Twig templates and standard HTML into a static HTML site that can be easily deployed.",
+  "link": "https://sculpin.io/",
+  "x": "15535",
+  "y": "7558"
+},
+{
+  "title": "HHVM",
+  "desc": "HHVM is an open-source virtual machine designed for executing programs written in Hack. HHVM uses a just-in-time (JIT) compilation approach to achieve great runtime performance while maintaining amazing development flexibility. HHVM supports the Hack programming language. We are moving fast, making changes daily and releasing often.",
+  "link": "https://hhvm.com/",
+  "x": "22021",
+  "y": "8201"
+},
+{
+  "title": "PHP Town Hall",
+  "desc": "PHP Town Hall is a podcast from Ben Edmunds and Matt Trask that raises questions about current events (or upcoming things) in the PHP community, with different guests each episode.",
+  "link": "https://phptownhall.com/",
+  "x": "21402",
+  "y": "2223"
+},
+{
+  "title": "Remi repo",
+  "desc": "Remi's RPM repository.",
+  "link": "https://rpms.remirepo.net/",
+  "x": "23927",
+  "y": "3659"
+},
+{
+  "title": "Ondřej's repository",
+  "desc": "The main PPA for supported PHP versions with many PECL extensions.",
+  "link": "https://launchpad.net/~ondrej/+archive/ubuntu/php",
+  "x": "24517",
+  "y": "4140"
+},
+{
+  "title": "Phar",
+  "desc": "The phar extension provides a way to put entire PHP applications into a single file called a phar (PHP Archive) for easy distribution and installation. In addition to providing this service, the phar extension also provides a file-format abstraction method for creating and manipulating tar and zip files through the PharData class.",
+  "link": "https://www.php.net/manual/en/book.phar.php",
+  "x": "23392",
+  "y": "4126"
+},
+{
+  "title": "Deployer",
+  "desc": "The PHP deployment tool with support for popular frameworks out of the box.",
+  "link": "https://deployer.org/",
+  "x": "24457",
+  "y": "4951"
+},
+{
+  "title": "MySQLi",
+  "desc": "The MySQL Improved Extension allows you to access the functionality provided by MySQL 4.1 and above.",
+  "link": "https://www.php.net/manual/en/book.mysqli.php",
+  "x": "17838",
+  "y": "3938"
+},
+{
+  "title": "Xampp",
+  "desc": "XAMPP is PHP development environment which is easy to install Apache distribution containing MariaDB, PHP, and Perl.",
+  "link": "https://www.apachefriends.org/",
+  "x": "20897",
+  "y": "2525"
+},
+{
+  "title": "PHP FPM",
+  "desc": "FPM (FastCGI Process Manager) is a primary PHP FastCGI implementation containing some features (mostly) useful for heavy-loaded sites.",
+  "link": "https://www.php.net/manual/en/install.fpm.php",
+  "x": "19744",
+  "y": "4976"
+},
+{
+  "title": "Why does PHP use a dollar sign $ to prefix variables?",
+  "desc": "Rasmus Lerdorf, the father of the PHP language, explains the $ sign as an ability to insert variables inside literal string values (interpolation), so that the variables are distinguished from the rest of the string. A dollar sign in front of variables in PHP is inspired by Perl which greatly influenced PHP during its early years. Many other programming languages also use a dollar sign in their syntax. This symbol is called “sigil” and simplifies interpolation. Names not prefixed by $ are considered constants, functions, class names, etc. Sigil usage simplifies the variable interpolation into strings.",
+  "link": "",
+  "x": "15509",
+  "y": "1687"
+},
+{
+  "title": "PSR-20: Clock",
+  "desc": "It describes a simple interface for reading the system clock.",
+  "link": "https://www.php-fig.org/psr/psr-20/",
+  "x": "5359",
+  "y": "7517"
+},
+{
+  "title": "PSR-7: HTTP message interfaces",
+  "desc": "It describes common interfaces for representing HTTP messages as described in RFC 7230 and RFC 7231, and URIs for use with HTTP messages as described in RFC 3986.",
+  "link": "https://www.php-fig.org/psr/psr-7/",
+  "x": "4832",
+  "y": "6416"
+},
+{
+  "title": "PEAR",
+  "desc": "PEAR - PHP Extension and Application Repository is a framework and distribution system for reusable PHP components.",
+  "link": "https://pear.php.net/",
+  "x": "18751",
+  "y": "8797"
+},
+{
+  "title": "PDO",
+  "desc": "The PHP Data Objects (PDO) extension defines a lightweight, consistent interface for accessing databases in PHP. Each database driver that implements the PDO interface can expose database-specific features as regular extension functions.",
+  "link": "https://www.php.net/manual/en/intro.pdo.php",
+  "x": "16003",
+  "y": "4181"
+},
+{
+  "title": "SPL",
+  "desc": "The Standard PHP Library (SPL) is a collection of interfaces and classes that are meant to solve common problems.",
+  "link": "https://www.php.net/manual/en/book.spl.php",
+  "x": "15602",
+  "y": "3662"
+},
+{
+  "title": "Psl",
+  "desc": "PHP Standard Library (a.k.a. Psl), is a standard library for PHP, inspired by hhvm/hsl. The goal of Psl is to provide a consistent, centralized, well-typed set of APIs for PHP programmers.",
+  "link": "https://php-standard-library.github.io/",
+  "x": "15727",
+  "y": "3252"
+},
+{
+  "title": "Design patterns",
+  "desc": "In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design.",
+  "link": "https://designpatternsphp.readthedocs.io",
+  "x": "14177",
+  "y": "2826"
+},
+{
+  "title": "Generators",
+  "desc": "Generators provide an easy way to implement simple iterators without the overhead or complexity of implementing a class that implements the Iterator interface.",
+  "link": "https://www.php.net/manual/en/language.generators.overview.php",
+  "x": "21125",
+  "y": "4817"
+},
+{
+  "title": "hrtime",
+  "desc": "The hrtime function returns the system's high resolution time, counted from an arbitrary point in time.",
+  "link": "https://www.php.net/manual/en/function.hrtime.php",
+  "x": "21001",
+  "y": "5837"
+},
+{
+  "title": "OPcache",
+  "desc": "OPcache improves PHP performance by storing precompiled script bytecode in shared memory, thereby removing the need for PHP to load and parse scripts on each request.",
+  "link": "https://www.php.net/manual/en/book.opcache.php",
+  "x": "17000",
+  "y": "5452"
+},
+{
+  "title": "Silverstripe CMS",
+  "desc": "Silverstripe CMS is the intuitive content management system and flexible framework loved by editors and developers alike. Equip your web teams to achieve outstanding results.",
+  "link": "https://www.silverstripe.org/",
+  "x": "6741",
+  "y": "6685"
+},
+{
+  "title": "SilverEngine",
+  "desc": "SilverEngine is a PHP dynamical MVC framework with self-updating features, built for developers who need a simple and elegant toolkit to create powerfull full-featured web applications.",
+  "link": "https://github.com/SilverEngine/",
+  "x": "6375",
+  "y": "6718"
+},
+{
+  "title": "Mezzio",
+  "desc": "PHP Middleware runtime and utilities, targetting PSR-7 and PSR-15.",
+  "link": "https://docs.mezzio.dev/",
+  "x": "12704",
+  "y": "5123"
+},
+{
+  "title": "RFC - Request for Comments",
+  "desc": "All changes in PHP language happen via RFC process.",
+  "link": "https://wiki.php.net/rfc",
+  "x": "16575",
+  "y": "4590"
+},
+{
+  "title": "Docker",
+  "desc": "Docker is a platform designed to help developers build, share, and run modern applications. It handles the tedious setup, so you can focus on the code. PHP is available as various Docker images.",
+  "link": "https://hub.docker.com/_/php",
+  "x": "1916",
+  "y": "4971"
+},
+{
+  "title": "Symfony Mailer",
+  "desc": "Symfony's Mailer & Mime components form a powerful system for creating and sending emails - complete with support for multipart messages, Twig integration, CSS inlining, file attachments and a lot more.",
+  "link": "https://symfony.com/doc/current/mailer.html",
+  "x": "10256",
+  "y": "6257"
+},
+{
+  "title": "PsySH",
+  "desc": "A runtime developer console, interactive debugger and REPL for PHP.",
+  "link": "https://psysh.org/",
+  "x": "18052",
+  "y": "6908"
+},
+{
+  "title": "PHP Drama",
+  "desc": "There is always some drama in every community every now and then.",
+  "link": "",
+  "x": "8422",
+  "y": "6705"
+},
+{
+  "title": "Easy Admin Bundle",
+  "desc": "EasyAdmin creates beautiful administration backends for your Symfony applications. It's free, fast and fully documented.",
+  "link": "https://symfony.com/bundles/EasyAdminBundle/current/index.html",
+  "x": "10809",
+  "y": "6748"
+},
+{
+  "title": "Psalm",
+  "desc": "It's easy to make great things in PHP, but bugs can creep in just as easily. Psalm is a free & open-source static analysis tool that helps you identify problems in your code, so you can sleep a little better. Psalm helps people maintain a wide variety of codebases - large and small, ancient and modern. On its strictest setting it can help you prevent almost all type-related runtime errors, and enables you to take advantage of safe coding patterns popular in other languages. Psalm also fixes bugs automatically, allowing you to improve your code without breaking a sweat.",
+  "link": "https://psalm.dev/",
+  "x": "2594",
+  "y": "7308"
+},
+{
+  "title": "PHP.Watch",
+  "desc": "PHP News, Articles, Upcoming Changes, and more.",
+  "link": "https://php.watch/",
+  "x": "11952",
+  "y": "3947"
+},
+{
+  "title": "PHP AI",
+  "desc": "PHP-ML - Machine Learning library for PHP. Fresh approach to Machine Learning in PHP. Algorithms, Cross Validation, Neural Network, Preprocessing, Feature Extraction and much more in one library.",
+  "link": "https://gitlab.com/php-ai/php-ml",
+  "x": "20296",
+  "y": "6617"
+},
+{
+  "title": "Churn PHP",
+  "desc": "Package that helps you identify PHP files in your project that could be good candidates for refactoring. It examines each PHP file in the path it is provided and checks how many commits it has, calculates the cyclomatic complexity and creates a score based on these two values.",
+  "link": "https://github.com/bmitch/churn-php",
+  "x": "6974",
+  "y": "10915"
+},
+{
+  "title": "October CMS",
+  "desc": "October is a Content Management System (CMS) and web platform whose sole purpose is to make your development workflow simple again. It was born out of frustration with existing systems.",
+  "link": "https://octobercms.com/",
+  "x": "21630",
+  "y": "3512"
+},
+{
+  "title": "ElePHPants",
+  "desc": "ElePHPant is that adorable PHP mascot with an elephant in its design. The ElePHPant logo was originally introduced and created in 1998 for the PHP community by Vincent Pontier - spiritual father of thousands of ElePHPants around the world. In 1998, there were mostly CGI scripts used for dynamic websites. Vincent came up with the ElePHPant by drawing PHP letters on a paper and playing with them a little. He noticed they were in shape of an elephant.",
+  "link": "https://afieldguidetoelephpants.net/",
+  "x": "18113",
+  "y": "5163"
 }
 ]}

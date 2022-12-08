@@ -1,6 +1,4 @@
-<h1 id="h1">{{ site.title }}</h1>
-
-<p class="pe-center">{{ site.description }} <a class="ui tag red label" href="https://github.com/phpearth/php-lands">{% if site.github.latest_release %}{{ site.github.latest_release }}{% else %}Pre-release{% endif %}</a></p>
+<p class="pe-center">{{ site.description }}</p>
 
 <div class="ui inverted segment pe-map-segment">
   <div id="pe-dimmer" class="ui enabled inverted dimmer">
@@ -8,22 +6,7 @@
   </div>
 
   <div class="pe-container">
-    <div id="phplandsmap" data-map-src="{% if jekyll.environment != 'development' %}{{ site.app.map_url }}{% endif %}"><div id="tooltip"></div><div id="coordinates"></div></div>
-  </div>
-</div>
-
-<p>The exploration of the PHP lands has just started. There are still many unknown
-lands and places to discover. Captains, cartographers, and explorers can help
-make it more accurate.</p>
-
-<div class="ui black icon message">
-  <i class="file image outline icon"></i>
-  <div class="content">
-    <div class="header">Download map</div>
-    <div class="content">
-      Map is available for download in the following formats:<br><br>
-      <a class="ui primary compact button" href="https://github.com/phpearth/php-lands/releases"><i class="download icon"></i>PNG</a>
-    </div>
+    <div id="phplandsmap" data-map-src="{% if jekyll.environment != 'developmenta' %}{{ site.app.map_url }}{% endif %}"><div id="tooltip"></div><div id="coordinates"></div></div>
   </div>
 </div>
 
@@ -51,13 +34,6 @@ make it more accurate.</p>
     <div class="content">
       <div class="header">Starring</div>
       <div class="description">PHP community</div>
-    </div>
-  </div>
-  <div class="item">
-    <i class="tag icon"></i>
-    <div class="content">
-      <div class="header">Map edition</div>
-      <div class="description">{% if site.github.latest_release %}{{ site.github.latest_release }}{% else %}Pre-release{% endif %}</div>
     </div>
   </div>
   <div class="item">
@@ -96,7 +72,3 @@ make it more accurate.</p>
     New location
   </a>
 </div>
-
-<p>No developers were harmed during the making of this map.</p>
-
-<p>Arr!</p>

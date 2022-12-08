@@ -15,8 +15,7 @@ Website is rendered with GitHub pages.
 ## How to add a new location pin?
 
 Fork the GitHub repository and add a new entry in the [locations.json](locations.json)
-file. Position on the map can be determined with the `Toggle coordinates` button
-on the map.
+file.
 
 ## Have you discovered a new location?
 
