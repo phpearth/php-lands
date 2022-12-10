@@ -130,9 +130,9 @@ function App (locations) {
                         });
                     }
 
-                    var tooltip_x = Number(this.getAttribute('data-x'))+0.02;
-                    var tooltip_y = this.getAttribute('data-y');
-                    self.viewer.updateOverlay('tooltip', new OpenSeadragon.Point(Number(tooltip_x), Number(tooltip_y)+pinHeight));
+                    var tooltip_x = Number(this.getAttribute('data-x')) + 2*pinWidth/3;
+                    var tooltip_y = Number(this.getAttribute('data-y')) + 2*pinHeight/3;
+                    self.viewer.updateOverlay('tooltip', new OpenSeadragon.Point(tooltip_x, tooltip_y));
 
                     $('#tooltip').stop().fadeIn(100);
 
