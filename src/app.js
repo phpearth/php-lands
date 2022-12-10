@@ -1,3 +1,4 @@
+import './js/openseadragon-bookmark-url'
 import './js/openseadragon-svg-overlay'
 import './js/animation'
 import './js/map'

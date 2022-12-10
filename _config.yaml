@@ -22,4 +22,4 @@ exclude:
   - yarn-error.log
 app:
   map_url: https://raw.githubusercontent.com/phpearth/assets/master/php-lands/2022/v1.0
-  asset_version: v6
+  asset_version: v7

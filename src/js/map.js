@@ -78,6 +78,9 @@ function App (locations) {
             self.togglePins();
         });
 
+        // Enable the OpenSeadragon bookmark URL plugin.
+        this.viewer.bookmarkUrl();
+
         // Enable coordinates during development.
         //self.enableCoordinates();
     };
