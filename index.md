@@ -6,7 +6,7 @@
   </div>
 
   <div class="pe-container">
-    <div id="phplandsmap" data-map-src="{% if jekyll.environment != 'developmenta' %}{{ site.app.map_url }}{% endif %}"><div id="tooltip"></div><div id="coordinates"></div></div>
+    <div id="phplandsmap" data-map-src="{% if jekyll.environment != 'development' %}{{ site.app.map_url }}{% endif %}"><div id="tooltip"></div><div id="coordinates"></div></div>
   </div>
 </div>
 
