@@ -843,8 +843,8 @@
   "title": "October CMS",
   "desc": "October is a Content Management System (CMS) and web platform whose sole purpose is to make your development workflow simple again. It was born out of frustration with existing systems.",
   "link": "https://octobercms.com/",
-  "x": "21630",
-  "y": "3512"
+  "x": "21560",
+  "y": "3568"
 },
 {
   "title": "ElePHPants",
@@ -857,7 +857,14 @@
   "title": "Neos CMS",
   "desc": "Neos CMS is the Open Source Content Application Framework to master content intuitively.",
   "link": "https://neos.io",
-  "x": "8550",
-  "y": "9700"
+  "x": "9332",
+  "y": "10206"
+},
+{
+  "title": "php[architect]",
+  "desc": "Professional development for web developers: books, magazine, podcasts, events and more.",
+  "link": "https://www.phparch.com/",
+  "x": "22070",
+  "y": "2979"
 }
 ]}
