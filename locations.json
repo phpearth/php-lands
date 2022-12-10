@@ -866,5 +866,12 @@
   "link": "https://www.phparch.com/",
   "x": "22070",
   "y": "2979"
+},
+{
+  "title": "PHPUgly",
+  "desc": "The podcast your mother warned you about. Ramblings of a few overworked PHP Developers. We discuss everything, from the challenges and excitement of running our small business and development shop the DiegoDev Group, to general day to day coding projects, to anything geek related or any other tech topics.",
+  "link": "https://www.phpugly.com/",
+  "x": "20201",
+  "y": "3170"
 }
 ]}
