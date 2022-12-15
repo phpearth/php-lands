@@ -1,6 +1,6 @@
 baseurl: /
 repository: phpearth/php-lands
-title: The PHP Lands Map
+title: The PHP Lands
 description: Explore the PHP language and ecosystem in a fun and interactive way using a pirate map.
 exclude:
   - bin

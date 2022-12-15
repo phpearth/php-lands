@@ -8,6 +8,7 @@ $base-font: 'Cinzel';
 
 h1 {
   font-family: $base-font;
-  font-size: 2em;
-  margin: 0 0 0 50px;
+  font-size: 1.5em;
+  margin: 15px 0 0 50px;
+  word-wrap: break-word;
 }
