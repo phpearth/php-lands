@@ -1,7 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  src: url(../fonts/Cinzel-VariableFont_wght.ttf) format('truetype');
+}
 
 $base-font: 'Cinzel';
 
 h1 {
   font-family: $base-font;
+  font-size: 2em;
+  margin: 0 0 0 50px;
 }
