@@ -206,8 +206,8 @@
   "title": "API Platform",
   "desc": "Create REST and GraphQL APIs, scaffold Jamstack webapps, stream changes in real-time.",
   "link": "https://api-platform.com/",
-  "x": "7907",
-  "y": "10681"
+  "x": "7875",
+  "y": "10875"
 },
 {
   "title": "Monolog",
@@ -878,7 +878,7 @@
   "title": "Fusio",
   "desc": "API management platform which helps to create innovative API solutions.",
   "link": "https://www.fusio-project.org/",
-  "x": "7850",
-  "y": "10600"
+  "x": "7800",
+  "y": "10115"
 }
 ]}
