@@ -47,7 +47,7 @@
     <i class="lightbulb outline icon"></i>
     <div class="content">
       <div class="header">Inspiration</div>
-      <div class="description"><a href="http://fearlesscoder.blogspot.si/2017/02/the-c17-lands.html" target="_blank">The C++17 Lands</a></div>
+      <div class="description"><a href="https://fearlesscoder.blogspot.si/2017/02/the-c17-lands.html" target="_blank">The C++17 Lands</a></div>
     </div>
   </div>
   <div class="item">

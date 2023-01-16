@@ -65,7 +65,7 @@
 {
   "title": "PHP Weekly",
   "desc": "PHP Weekly is a free mailer sent out each week with PHP News, events, articles, links and more.",
-  "link": "http://www.phpweekly.com",
+  "link": "https://www.phpweekly.com",
   "x": "21470",
   "y": "2829"
 },
@@ -177,7 +177,7 @@
 {
   "title": "PHP Mussel",
   "desc": "An ideal solution for shared hosting environments, where it's often not possible to utilise or install conventional anti-virus protection solutions, phpMussel is a PHP script designed to detect trojans, viruses, malware and other threats within files uploaded to your system wherever the script is hooked, based on the signatures of ClamAV and others.",
-  "link": "http://phpmussel.github.io/",
+  "link": "https://phpmussel.github.io/",
   "x": "8506",
   "y": "11483"
 },
