@@ -24,7 +24,7 @@
       <div class="header">Explorers</div>
       <div class="description">
         {% for user in site.github.contributors %}
-          <a href="{{ user.html_url }}">{{ user.login }}</a>
+          <a href="{{ user.html_url }}">{{ user.login }}</a>{% if forloop.last != true %},{% endif %}
         {% endfor %}
       </div>
     </div>
