@@ -1,6 +1,17 @@
 repository: phpearth/php-lands
 title: The PHP Lands
+tagline: A pirate map of PHP
 description: Explore the PHP language and ecosystem in a fun and interactive way using a pirate map.
+logo: https://raw.githubusercontent.com/phpearth/assets/master/php-lands/og.jpg
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: https://raw.githubusercontent.com/phpearth/assets/master/php-lands/og.jpg
+        width: 1200
+        height: 1200
+        alt: The PHP Lands
 exclude:
   - bin
   - node_modules

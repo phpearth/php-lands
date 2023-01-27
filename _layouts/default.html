@@ -1,24 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-    <link rel="icon" type="image/x-icon" href="https://php.earth/favicon.ico">
-
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- open graph -->
-    <meta property="og:title" content="{{ site.title }}">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://lands.php.earth">
-    <meta property="og:image" content="https://raw.githubusercontent.com/phpearth/assets/master/php-lands/og.jpg?{{ site.app.asset_version }}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
-    <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:site_name" content="PHP.earth">
+    {% seo %}
 
-    <meta property="fb:pages" content="583227448539653">
+    <link rel="icon" type="image/x-icon" href="https://php.earth/favicon.ico">
 
     <link rel="stylesheet" href="https://php.earth/assets/main.css">
     <link rel="stylesheet" href="/dist/style.css?{{ site.app.asset_version }}">
