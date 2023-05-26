@@ -9,7 +9,7 @@ function App (locations) {
     this.init = function() {
         this.viewer = OpenSeadragon({
             id: "phplandsmap",
-            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/images/",
+            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/images/",
             tileSources: document.getElementById('phplandsmap').getAttribute('data-map-src')+'/map.dzi',
             visibilityRatio: 1,
             constrainDuringPan: true,
@@ -95,7 +95,7 @@ function App (locations) {
             var x = Number((Number(this.locations[i].x))/imageWidth)-2*pinWidth/3;
             var y = Number((Number(this.locations[i].y))/imageWidth)-4*pinHeight/5;
 
-            var link = (this.locations[i].link) ? '<div><a href="'+this.locations[i].link+'" target="_blank" title="Find out more..." id="tooltiplink"><i class="icon linkify"></i></a></div>' : '';
+            var link = (this.locations[i].link !== '') ? '<div><a href="' + this.locations[i].link + '" target="_blank" title="Find out more..." id="tooltiplink"><i class="icon linkify"></i></a></div>' : '';
             var content = '<div class="header"><i class="map marker alternate icon"></i> ' + this.locations[i].title + '</div><div class="content">' + this.locations[i].desc + link + '</div>';
 
             this.pins[i] = d3.select(this.svgOverlay.node()).append("svg:image")
@@ -137,20 +137,22 @@ function App (locations) {
                     $('#tooltip').stop().fadeIn(100);
 
                     // This enables links in the tooltip.
-                    var tracker = new OpenSeadragon.MouseTracker({
-                        element: 'tooltiplink',
-                        clickHandler: function(event) {
-                            event.preventDefaultAction = true;
-                            var target = event.originalEvent.target;
-                            if (target.matches('a')) {
-                                if (target.getAttribute('target') === '_blank') {
-                                    window.open(target.getAttribute('href'));
-                                } else {
-                                    location.href = target.getAttribute('href');
+                    if (document.getElementById('tooltiplink')) {
+                        var tracker = new OpenSeadragon.MouseTracker({
+                            element: 'tooltiplink',
+                            clickHandler: function(event) {
+                                event.preventDefaultAction = true;
+                                var target = event.originalEvent.target;
+                                if (target.matches('a')) {
+                                    if (target.getAttribute('target') === '_blank') {
+                                        window.open(target.getAttribute('href'));
+                                    } else {
+                                        location.href = target.getAttribute('href');
+                                    }
                                 }
                             }
-                        }
-                     });
+                         });
+                    }
                 })
 
                 .on('mouseout', function(){
