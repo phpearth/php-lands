@@ -9,7 +9,7 @@ function App (locations) {
     this.init = function() {
         this.viewer = OpenSeadragon({
             id: "phplandsmap",
-            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/images/",
+            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.1/images/",
             tileSources: document.getElementById('phplandsmap').getAttribute('data-map-src')+'/map.dzi',
             visibilityRatio: 1,
             constrainDuringPan: true,
