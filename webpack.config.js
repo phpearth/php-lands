@@ -24,7 +24,8 @@ const config = {
     ],
     externals: {
         openseadragon: 'OpenSeadragon'
-    }
+    },
+    mode: 'production'
 };
 
 module.exports = config;
