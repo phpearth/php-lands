@@ -8,12 +8,11 @@
     "watch": "webpack --watch"
   },
   "devDependencies": {
-    "css-loader": "^7.1",
-    "mini-css-extract-plugin": "^2.9",
-    "node-sass": "^9",
+    "css-loader": "^7.1.4",
+    "mini-css-extract-plugin": "^2.10",
+    "sass": "^1.99.0",
     "sass-loader": "^16",
-    "style-loader": "^4.0",
-    "webpack": "^5.102",
-    "webpack-cli": "^6.0"
+    "webpack": "^5.106",
+    "webpack-cli": "^7.0"
   }
 }

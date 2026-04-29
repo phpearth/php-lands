@@ -1,4 +1,4 @@
-// OpenSeadragon Bookmark URL plugin 0.0.4
+// OpenSeadragon Bookmark URL plugin 0.0.5
 
 (function() {
 
@@ -48,7 +48,8 @@
                 var pan = self.viewport.getCenter();
                 var page = self.currentPage();
                 var oldUrl = location.pathname + location.hash;
-                var url = location.pathname + '#zoom=' + zoom + '&x=' + pan.x + '&y=' + pan.y;
+                var search = location.search;
+                var url = location.pathname + search + '#zoom=' + zoom + '&x=' + pan.x + '&y=' + pan.y;
                 if (trackPage) {
                     url = url + '&page=' + page;
                 }
