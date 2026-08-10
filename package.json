@@ -10,9 +10,9 @@
   "devDependencies": {
     "css-loader": "^7.1.4",
     "mini-css-extract-plugin": "^2.10",
-    "sass": "^1.99.0",
-    "sass-loader": "^16",
-    "webpack": "^5.106",
-    "webpack-cli": "^7.0"
+    "sass": "^1.102.0",
+    "sass-loader": "^16.0.8",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2"
   }
 }
